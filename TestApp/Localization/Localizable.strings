@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  TestApp
+
+  Created by Nyilas Zsombor on 20/02/2024.
+  
+*/
+
+"unknownValue" = "N/A";
+"updatedAt" = "Updated at:";
+"createdAt" = "Created at:";
+"repositoriesViewEmptyText" = "Try searching for something.";
+"repositoriesViewErrorText" = "Oops, something went wrong.";
+"searchViewButtonText" = "Search";
+"searchViewPlaceholder" = "Keywords, qualifiers ...";

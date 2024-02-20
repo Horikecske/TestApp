@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import Swinject
 
 @main
 struct TestAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RepositorySearchView()
+                .environment(\.locale, .init(identifier: "en"))
         }
+    }
+    
+    init() {
+        // Assembling the AppContainer
+        let assembler = Assembler(container: AppContainer.shared.container)
+        assembler.apply(assemblies: [NetworkAssembly()])
     }
 }
