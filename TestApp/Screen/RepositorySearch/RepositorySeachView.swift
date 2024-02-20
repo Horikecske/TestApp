@@ -36,7 +36,6 @@ struct RepositorySearchView: View {
     }
     
     // MARK: - Subviews
-    
     var listView: some View {
         List(viewModel.repositories, id: \.self) { repository in
             NavigationLink(value: repository) {
